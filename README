@@ -1,0 +1,5 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1437
+
+Msbuild is an easy way to building visusal studio's solution without the IDE. It's very cool using vim to work with your "IDE team members". So this is msbuild plugin.
+
+Msbuild use csc internally to build .csproj project file. Normally we build .sln file, which is in the parent directory of .csproj file. So the csc's output is relative to .csproj directory, not the .sln directory. Vim can't find the error source file. To solve this, you must enable "GenerateFullPaths" option in your .csproj project file.
